@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .header {
+            height: 70px;
+        }
+        
+        .header h1 {
+            line-height: 70px;
+            text-align: center;
+            color: rgba(142, 55, 51, 255);
+            text-shadow: 8px 10px 10px rgba(255, 0, 0, 0.7);
+        }
+        
+        .wrapper {
+            width: 90%;
+            height: 875px;
+            margin: 0 auto;
+            border: 2px solid rgb(252, 59, 59);
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: center;
+            border: 1px solid rgb(172, 108, 108);
+            height: 35px;
+            background-color: #e99596;
+        }
+        
+        .nav a {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            line-height: 35px;
+            /* padding: 0 20px; */
+            border-right: 1px solid #000;
+            min-width: 130px;
+            text-align: center;
+        }
+        
+        .nav_find {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+        /* SIDE1 */
+        
+        .containner {
+            display: flex;
+            height: 650px;
+        }
+        
+        .side1 {
+            width: 20%;
+        }
+        
+        .side1_img {
+            width: 95%;
+            border-radius: 50%;
+        }
+        
+        .side1 li {
+            background-color: #e99596;
+            width: 95%;
+            list-style: none;
+            height: 24px;
+            margin-top: 4px;
+            border-radius: 50px;
+        }
+        
+        .side1 li a {
+            text-decoration: none;
+        }
+        
+        .side1 ul {
+            text-align: center;
+        }
+        
+        .side1_img {
+            box-shadow: 7px 10px 8px #e99596;
+            margin-top: 20px;
+        }
+        /* SIDE MAIN */
+        
+        .side_main {
+            width: 50%;
+        }
+        
+        .side_main h2 {
+            background-color: #e99596;
+            margin-top: 5px;
+            width: 40%;
+            margin: 5px auto 0;
+            color: red;
+        }
+
+        .start_content, .Desserts_content{
+            margin-left: 30px;
+        }
+
+        .start_content span{
+            color: red;
+            font-weight: 700;
+        }
+
+        table{
+            width: 95%;
+        }
+
+        tr{
+            width: 50%;
+        }
+        td{
+            display: inline-block;
+            margin: 10px 8px;
+        }
+        
+        input[type = "text"],input[type = "email"],input[type = "password"],select{
+            height: 35px;
+            width: 270px;
+        }
+
+        input[type = "submit"]{
+            height: 30px;
+            width: 80px;
+        }
+        /* SIDE 2 */
+        .side2{
+            width: 30%;
+            background-color: #000;
+            margin-top: 10px;
+        }
+        /* FOOTER */
+        .footer{
+           height: 120px;
+            background-color: #e99596;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>EXAMPLE CAFE MENU</h1>
+        </div>
+        <div class="nav">
+            <a href="">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <a href="">Starter</a>
+            <a href="">Main Courses</a>
+            <a href="">Desserts</a>
+            <span class=" nav_find">
+                <input type="text">
+                <input type="submit" value="GO">
+            </span>
+        </div>
+        <!-- BODY -->
+        <!-- SIDE1 -->
+        <div class="containner">
+            <div class="side1">
+                <ul>
+                    <li>
+                        <a href="">1</a>
+                    </li>
+                    <li>
+                        <a href="">2</a>
+                    </li>
+                    <li>
+                        <a href="">3</a>
+                    </li>
+                    <li>
+                        <a href="">4</a>
+                    </li>
+                    <li>
+                        <a href="">5</a>
+                    </li>
+                </ul>
+                <img src="../IMG/Bai1/company.png" alt="" class="side1_img">
+            </div>
+            <!-- SIDE_MAIN -->
+            <div class="side_main">
+                <div class="start">
+                    <h2 style="letter-spacing: 10px;">
+                        STARTER
+                    </h2>
+                    <ul class="start_content">
+                        <li>Chesnut and Mushroom Goujons <span>(v)</span></li>
+                        <li>Goat Cheese<span>(v)</span></li>
+                        <li><h3 style="color: rgb(223,189,156); display: inline;">HONEY SOY CHICKEN KEBABS</h3><span>(v)</span></li>
+                        <li>Seafood Salad<span>(v)</span></li>
+                    </ul>
+                    <a href="" style="color: red;">Back to Top</a>
+                </div>
+
+                <div class="Desserts">
+                    <h2 style="letter-spacing: 10px;">
+                        DESSERT
+                    </h2>
+                    <ul class="Desserts_content">
+                        <li>Lemon Sorbet<span>(v)</span></li>
+                        <li>Chocolate Mub Pie<span>(v)</span></li>
+                        <li>Pecan Pie<span>(v)</span></li>
+                        <li>Selection of fine Cheeses from Around the<span>(v)</span></li>
+                    </ul>
+                    <a href="" style="color: red;">Back to Top</a>
+                </div>
+
+                <div class="infomation">
+                    <h2 style="letter-spacing: 10px;">INFOMATION</h2>
+                    <!-- <div class="info_contain">
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Last Name">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <select name="" id="">
+                            <option value="">VietNam</option>
+                            <option value="">USA</option>
+                            <option value="">THAILAN</option>
+                        </select>
+                        <span>
+                            <input type="radio" name="country">Vietnamese
+                            <input type="radio" name="country">Foreigner
+                        </span>
+                    </div> -->
+                    <table class="info_contain">
+                        <tr>
+                            <td><input type="text" placeholder="First Name"></td>
+                            <td><input type="text" placeholder="Last Name"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="email" placeholder="Email"></td>
+                            <td><input type="password" placeholder="Password"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="" id="">
+                                    <option value="">VietNam</option>
+                                    <option value="">USA</option>
+                                    <option value="">THAILAN</option>
+                                </select>
+                            </td>
+                            <td>
+                                <span>
+                                    <input type="radio" name="country">Vietnamese
+                                    <input type="radio" name="country">Foreigner
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><textarea name="" id="" cols="64" rows="3"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="submit" value="Submit">
+                                <input type="submit" value="Cancel">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+            <div class="side2">
+                <h1 style="color: #fff;">Events</h1>
+                <div class="side2_content1" style="margin-top: 20px;">
+                    <h2 style="color: #fff; margin: 0 20%;">Regular Meetings</h2>
+                    <img src="../IMG/Bai1/meeting.png" alt="" style="width: 60%; margin: 0 20%;">
+                    <p style="color: #fff; margin:0 20%;">Mờ quá không thấy gì trong ảnh hết, Mờ quá không thấy gì trong ảnh hết</p>
+                </div>
+                <div class="side2_content1" style="margin-top: 20px;">
+                    <h2 style="color: #fff; margin: 0 20%;">Product Launches</h2>
+                    <img src="../IMG/Bai1/launch.png" alt="" style="width: 60%; margin: 0 20%;">
+                    <p style="color: #fff; margin:0 20%;">Mờ quá không thấy gì trong ảnh hết, Mờ quá không thấy gì trong ảnh hết</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h1 style="color: #fff; text-align: center; line-height: 120px;">ABC COMPANY - 12345678 - abccoffea@gmail.com</h1>
+        </div>
+    </div>
+</body>
+
+</html>

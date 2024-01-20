@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .containner{
+            margin: 10px;
+            height: 800px;
+        }
+        /* HEADER */
+        .header{
+            background-image: url(../IMG/Bai2/background.png);
+            height: 120px;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-title{
+            color: #e1dcdc;
+            margin-left: 20px;
+        }
+        /* NAV */
+        .nav{
+            height: 40px;
+            background-color: rgb(157,154,149);
+        }
+
+        .nav li{
+            list-style: none;
+            display: inline-block;
+            width: 100px;
+            text-align: center;
+            padding: 0 10px;
+
+        }
+
+        .nav li a{
+            text-decoration: none;
+            line-height: 40px;
+            color: #fff;
+            font-weight: 700;
+            font-size: 25px;
+        }
+
+        .nav li:hover a{
+            color: #000;
+        }
+        /* CONTENT */
+        .content{
+            display: flex;
+            height: 600px;
+        }
+
+        .content_left{
+            width: 70%;
+        }
+
+        .content_right{
+            width: 30%;
+        }
+
+        .content_main{
+            display: flex;
+        }
+
+        .content_main_img{
+            margin: 20px;
+            width: 50%;
+        }
+
+        .content_main_img p{
+            font-size: 24px;
+        }
+
+        .content_main_img img{
+            width: 90%;
+        }
+
+        .content_main_description{
+            margin-top: 25px;
+            width: 50%;
+        }
+
+        .content_main_description p{
+            font-size: 24px;
+        }
+
+        .content_main_description h2{
+            color: #ccc;
+        }
+
+        .content_right{
+            margin-left: 35px;
+        }
+
+        .content_popular{
+            margin-top: 25px;
+            margin-bottom: 50px;
+        }
+
+        .content_popular h1{
+            color: red;
+        }
+
+        .content_popular li{
+            list-style: none;
+            padding: 14px 5px;
+        }
+
+        .content_popular li a{
+            color: red;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .content_contact h1{
+            color: red;
+            margin: 15px 0;
+        }
+
+        .content_contact p{
+            font-size: 24px;
+        }
+        /* FOOTER */
+        .footer{
+            background-image: url(../IMG/Bai2/background.png);
+            width: 100%;
+            height: 50px;
+            color: #fff;
+            text-align: center;
+            line-height: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="containner">
+        <div class="header">
+            <img src="../IMG/Bai2/logo.png" alt="" style="width: 100px;">
+            <span class="header-title">
+                <h1 style="color: #fff;">YOKO'S KITCHEN</h1>
+                <h2 style="color: #fff;">JAPANESE COOKING CLASSES</h2>
+            </span>
+        </div>
+        <div class="nav">
+            <li><a href="">home</a></li>
+            <li><a href="">classes</a></li>
+            <li><a href="">catering</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">contact</a></li>
+        </div>
+        <div class="content">
+            <div class="content_left">
+                <div class="content_main"  >
+                    <div class="content_main_img">
+                         <img src="../IMG/Bai2/Boiled-Vegetables.jpg" alt="">
+                         <p>Bok Choi</p>
+                    </div>
+                    <div class="content_main_description">
+                         <h2>Japanese Vegetarian</h2>
+                         <p style="color: red;">Five week course in London</p>
+                         <p>A five week introduction to traditional Japanese vegetarian meals, teaching you a selection of rice and noodle dishes.</p>
+                     </div>
+                 </div>
+                 <div class="content_main"  >
+                     <div class="content_main_img">
+                          <img src="../IMG/Bai2/teriyaki.jpg" alt="">
+                          <p>Teriyaki Sauce</p>
+                     </div>
+                     <div class="content_main_description">
+                          <h2>Sauces Masterclass</h2>
+                          <p style="color: red;">One day workshop</p>
+                          <p>An intensive one-day course looking at how to create the most delicious sauces for use in a range of Japanese cookery.</p>
+                      </div>
+                  </div>
+
+            </div>
+            <div class="content_right">
+                <div class="content_popular">
+                    <h1>Popular Recipies</h1>
+                    <li><a href="">Yakitori (grilled chicken)</a></li>
+                    <li><a href="">Tsukune (minced chicken patties)</a></li>
+                    <li><a href="">Okonomiyaki (savory pancakes)</a></li>
+                    <li><a href="">Mizutaki (chicken stew)</a></li>
+                </div>
+                <div class="content_contact">
+                    <h1>Contact</h1>
+                    <p>Mizutaki (chicken stew)</p>
+                    <p>27 Redchurch Street</p>
+                    <p>Shoreditch</p>
+                    <p>London E2 7DP</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h1>2011 Yoko's Kitchen</h1>
+        </div>
+    </div>
+</body>
+</html>
