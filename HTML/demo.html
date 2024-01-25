@@ -3,28 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Document</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+         #header{
+
+         }
+
+         #header li{
+            list-style: none;
+         }
+
+         #header li a{
+            display: block;
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+            font-weight: 700;
+            height: 50px;
+            width: 200px;
+            line-height: 50px;
+            text-align: center;
+            background-color: #fff;
+            border: 1px solid #000;
+            border-collapse: collapse;
+         }
+
+         #header span{
+            display: block;
+            font-size: 40px;
+            /* overflow: hidden; */
+            height: 40px;
+            cursor: pointer;
+            
+         }
+
+         .hidden_menu{
+            overflow: hidden;
+         }
+
+         .hidden_icon{
+            display: none;
+         }
+
         
     </style>
 </head>
-<body>
-    <form action="" name="myForm" onsubmit="validator()">
-        <label for="fname">UserName:</label>
-        <input type="text" id="fname" required> <br>
-        <input type="submit" onclick="document.getElementById('fname').style.color = 'red';">
-    </form>
-
-    <script>
+<body >
+    <div id="header">
+        <span id = "menu" class="hidden_menu">
+            <i id ="menu_icon_1" class="fa-solid fa-x hidden_icon"></i>
+            <i id ="menu_icon_2" class="fa-solid fa-bars "></i>
+            <div id="list_menu" >
+                <li><a href="">Home</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Help</a></li>
+                <li><a href="">Setting</a></li>
+            </div>
+        </span>
         
-        // function validator(){
-        //     const x = document.forms["myForm"]["fname"].value;
-        //    if(isNaN(x)|| x>10||x<1){
-        //     alert("Not mumber!")
-        //     return false;
-        //    }
-        //    alert("That right :}}");
-        // }
+    </div>
+    
+    <script>
+        const menuE = document.getElementById("menu");
+        menuE.addEventListener('click',openMenu);
+
+        function openMenu(){
+            menuE.classList.toggle('hidden_menu');
+            document.getElementById("menu_icon_1").classList.toggle('hidden_icon');
+            document.getElementById("menu_icon_2").classList.toggle('hidden_icon');
+            // menuE.style.
+        }
+        
     </script>
 </body>
 </html>
